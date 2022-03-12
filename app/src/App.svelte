@@ -1,11 +1,12 @@
 <script>
-	export let name;
+	import { Route } from "tinro";
+	// pages
+	import Home from "./pages/index.svelte";
 </script>
 
-<main>
-	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
-</main>
+<Route path="/">
+	<Home />
+</Route>
 
 <style>
 	main {
