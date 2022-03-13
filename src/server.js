@@ -17,6 +17,7 @@ serve((req) => {
       "./app/public/build/bundle.js",
       "text/javascript",
     ),
+    "/assets/moment.svg": serveStatic("./app/public/assets/moment.svg", "image/svg+xml"),
     "/graphql": graphql,
   };
 
@@ -38,7 +39,7 @@ serve((req) => {
 function serveStatic(file, type) {
   return async () =>
     new Response(
-      await Deno.readTextFile(file),
+      await Deno.readFile(file),
       {
         headers: { "content-type": type },
       },

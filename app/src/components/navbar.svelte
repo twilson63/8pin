@@ -3,7 +3,7 @@
     <a class="btn btn-ghost normal-case text-xl">8pin</a>
   </div>
   <div class="flex-none">
-    <ul class="menu menu-horizontal p-0">
+    <ul class="invisible md:visible menu menu-horizontal p-0">
       <li><a href="/">Home</a></li>
       <li><a href="#how">How it Works</a></li>
       <li><a href="#getting-started">Getting Started</a></li>
